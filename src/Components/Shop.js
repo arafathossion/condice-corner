@@ -1,21 +1,28 @@
 import React from 'react';
-import { Container, Row, Col, Carousel, ListGroup, Card } from 'react-bootstrap';
+import { Container, Row, Col, ListGroup, Card } from 'react-bootstrap';
+
 
 function Shop(props) {
     return (
-        <Container>
+        <Container className='p60'>
             <Row>
                 <Col md={8}>
-                    <h4>I will create a wordpress website or wordpress website design</h4>
 
-                    <div className='sgInfo py-4'>
-                        <img src={process.env.PUBLIC_URL + '/images/all4.jpg'} alt="" srcset="" /> &nbsp; <span>ahmadubaid
+                    <h3 className='fw-5 fw-bolder'>I will create a wordpress website or wordpress website design</h3>
+
+                    <div className='sgInfo py-3 d-flex align-items-center justify-content-between'>
+                       <div>
+                       <img src={process.env.PUBLIC_URL + '/images/all4.jpg'} alt="" srcset="" /> &nbsp; <span>ahmadubaid
                         </span> &nbsp;
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i> 8 (2 orders in queue)
+                       </div>
+                        <div className='pt-3'>
+                            <p className='d-flex align-items-center fs-5'> <span className=''>50</span> &nbsp; <span className='usd'>USD/Hour</span> </p>
+                        </div>
                     </div>
 
 
@@ -24,30 +31,12 @@ function Shop(props) {
 
 
 
+                    <img
+                        className="d-block w-100"
+                        src={process.env.PUBLIC_URL + '/images/all4.jpg'}
+                        alt="First slide"
+                    />
 
-                    <Carousel fade>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src={process.env.PUBLIC_URL + '/images/all4.jpg'}
-                                alt="First slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src={process.env.PUBLIC_URL + '/images/all4.jpg'}
-                                alt="Second slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src={process.env.PUBLIC_URL + '/images/all4.jpg'}
-                                alt="Third slide"
-                            />
-                        </Carousel.Item>
-                    </Carousel>
 
                     <div className='aGig py-5'>
                         <h4>About the gig</h4>
@@ -78,12 +67,13 @@ function Shop(props) {
                                     <i class="fas fa-star text-warning"></i>
                                     <i class="fas fa-star text-warning"></i>
                                     <i class="fas fa-star text-warning"></i> 5 (8) &nbsp;</div>
-                                <a href="http://" className='w-50 text-center px-0 mt-2'>Contact</a>
+                                <a href="http://" className='w-25 text-center px-0 mt-2'>Contact</a>
                             </Card.Body>
                         </Card>
+                        
 
 
-                        <div className='border px-4'>
+                        <div className='border px-4 w-75'>
                             <div className='d-flex justify-content-between py-3'>
                                 <div>
                                     <div className='pb-3 fs-6 fw-bold'>
@@ -118,27 +108,7 @@ function Shop(props) {
                     {/* About Seller */}
                 </Col>
                 {/* Left Side */}
-                <Col md={4} className='priceList d-flex align-item-center flex-column'>
-                    <div className='pTitle d-flex justify-content-between'>
-                        <h6><b>Bronze Package</b></h6>
-                        <p><b>$560</b></p>
-                    </div>
-                    <p>For any CSS/ HTML issue, new website, editing in current website, PSD TO HTML</p>
-                    <div className='d-flex justify-content-between fw-bold pb-3'>
-                        <span><i class="fas fa-clock text-color"></i> &nbsp; 3 Days Delivery</span>
-                        <span><i class="fas fa-history text-color"></i> &nbsp; Unlimited Revisions</span>
-                    </div>
-                    <ul>
-                        <li><i class="fas fa-check text-color"></i> &nbsp; Design Customization</li>
-                        <li><i class="fas fa-check text-color"></i> &nbsp; Design Customization</li>
-                        <li><i class="fas fa-check text-color"></i> &nbsp; Design Customization</li>
-                        <li><i class="fas fa-check text-color"></i> &nbsp; Design Customization</li>
-                    </ul>
-                    <div className='d-flex justify-content-center pt-3'>
-                    <a href="">Contuine ($560)</a>
-                    </div>
-                </Col>
-                {/* Right Side */}
+                
             </Row>
         </Container>
     );

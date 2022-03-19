@@ -11,8 +11,8 @@ function Tabs(props) {
     return (
         <>
 
-            <Container className='col-pain pb-5'>
-                <Row>
+            <Container >
+                <Row className=' mb-5'>
 
                     <Col md={3}>
                         <Row className='border py-4 mb-4'>
@@ -40,9 +40,8 @@ function Tabs(props) {
                                 </div>
                             </Col>
                             <Col sm={12}></Col>
-                            <Col sm={12} className='pLink d-flex justify-content-between'>
+                            <Col sm={12} className='pLink d-flex justify-content-center'>
                                 <a href="http://">Contact me</a>
-                                <a href="http://">Get a Quote</a>
                             </Col>
 
                         </Row>
@@ -63,8 +62,8 @@ function Tabs(props) {
                         <Row>
                             <Col md={12}>
                                 <div className='gigheader'>
-                                    <h3>Your Gig</h3>
-                                    <Link to='/gig'>creact gig</Link>
+                                    <h3>Your Services</h3>
+                                    <Link to='/gig'>create gig</Link>
                                 </div>
                             </Col>
                         </Row>
@@ -82,7 +81,7 @@ function Tabs(props) {
                                             </span>
                                             <span>
                                                 <p>Your Name</p>
-                                                <p>Seller Level</p>
+                                                
                                             </span>
                                         </div>
                                         <Card.Title>I will create a wordpress website or wordpress website design</Card.Title>
@@ -115,7 +114,7 @@ function Tabs(props) {
                                             </span>
                                             <span>
                                                 <p>Your Name</p>
-                                                <p>Seller Level</p>
+                                               
                                             </span>
                                         </div>
                                         <Card.Title>I will create a wordpress website or wordpress website design</Card.Title>
@@ -148,7 +147,7 @@ function Tabs(props) {
                                             </span>
                                             <span>
                                                 <p>Your Name</p>
-                                                <p>Seller Level</p>
+                                               
                                             </span>
                                         </div>
                                         <Card.Title>I will create a wordpress website or wordpress website design</Card.Title>

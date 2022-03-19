@@ -389,7 +389,7 @@ p.fw-bold {
   margin-bottom: 30px;
 }
 .form .btn {
-  background-color: #8cc63f;
+  background-color: var(--main-color);
   padding: 15px 50px;
   font-weight: bold;
   color: white;
@@ -486,6 +486,7 @@ img.rounded-circle {
   font-size: var(--main-font);
   font-weight: 700;
   border-radius: 30px;
+  font-size: calc(8px + 1vmin);
 }
 .badge-btn:hover{
   color: var(--main-color);
@@ -498,9 +499,10 @@ img.rounded-circle {
 }
 .pLink a,.agSeller a{
   border: 1px solid #000;
-  padding: 10px 20px;
+  padding: 7px 15px;
   border-radius: 10px;
   color: var(--main-color);
+  font-size: calc(8px + 1vmin);
   font-family: var(--main-font);
   font-weight: 600;
   text-transform: capitalize;
@@ -565,11 +567,12 @@ hr{
   justify-content: space-between;
 }
 .gigheader a{
-  background-color: var(--main-color);
   border: 1px solid #000;
-  padding: 10px 20px;
+  background-color: var(--main-color);
+  padding: 7px 15px;
   border-radius: 10px;
   color: white;
+  font-size: calc(8px + 1vmin);
   font-family: var(--main-font);
   font-weight: 600;
   text-transform: capitalize;
@@ -579,6 +582,7 @@ hr{
 .aGig,.agSeller,.priceList{
   font-family: var(--main-font);
 }
+
 .sgInfo img{
   width: 50px;
   height: 50px;
@@ -596,6 +600,11 @@ hr{
 
 .agSeller p{
   margin-bottom: 0;
+}
+.prices{
+  margin-top: 155px;
+  border: 1px solid rgba(104, 103, 103, 0.61) !important;
+  padding: 50px 20px 0 20px;
 }
 .priceList ul{
  list-style: none;
@@ -630,3 +639,13 @@ hr{
   align-items: center;
 }
 
+.titlePain::placeholder{
+  font-size: calc(25px + 1vmin) !important;
+}
+.titlePain{
+  font-size: calc(25px + 1vmin);
+}
+.usd{
+  font-size: calc(10px + 1vmin);
+  margin-top: 3px;
+}
